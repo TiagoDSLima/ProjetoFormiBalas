@@ -1,0 +1,68 @@
+@keyframes aparecerLentamente {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+#particles-js{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    height: 100%;
+}
+
+main{
+    animation: aparecerLentamente 3s ease forwards;
+    top: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 200px;
+
+}
+
+h1{
+    animation: aparecerLentamente 3s ease forwards;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin: 25px 0;
+    animation: aparecerLentamente 6s;
+}
+
+section {
+    animation: aparecerLentamente 3s ease forwards;
+    display: flex;
+    width: 1200px;
+}
+
+section p{
+    animation: aparecerLentamente 3s ease forwards;
+    color:white;
+    text-align: justify;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.card{
+    animation: aparecerLentamente 3s ease forwards;
+    border:5px solid rgb(193, 193, 223);
+    width: 600px;
+    height: 480px;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: subir 1.25s;
+}
+
