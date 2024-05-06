@@ -4,7 +4,7 @@ O projeto de extensão do curso, sob a orientação do Professor Márcio Lopes, 
 
 Desenvolvedores: 
 
-Página Inicial - Gabriel e Tiago
-Catálogo - Tiago
-Contatos - Gabriel
-Sobre - Karen
+Página Inicial - Gabriel e Tiago;
+Catálogo - Tiago;
+Contatos - Gabriel;
+Sobre - Karen;
