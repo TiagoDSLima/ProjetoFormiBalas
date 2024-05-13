@@ -78,6 +78,9 @@
 }
 
 @media (min-width:300px) and (max-width:430px){
+    *{
+      overflow: visible;
+    }
     .buttons{
       display: flex;
       flex-direction: column;
