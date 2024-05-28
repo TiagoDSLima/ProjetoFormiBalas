@@ -149,6 +149,11 @@ main {
 }
 
 .tras{
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   transform:rotateY(180deg);
 }
 
