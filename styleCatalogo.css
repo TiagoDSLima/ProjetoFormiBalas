@@ -26,7 +26,7 @@
   margin-right: 70px;
 }
 
-#header {
+header {
   animation: aparecerLentamente 3s ease forwards;
   display: flex;
   flex-direction: row;
@@ -94,7 +94,7 @@ input#barraPesquisa {
 }
 
 
-#cards {
+main {
   animation: aparecerLentamente 3s ease forwards;
   margin-top: 10.25rem;
   position: absolute;
@@ -107,33 +107,45 @@ input#barraPesquisa {
 
 }
 
-.card {
+.conteiner{
+  position: relative;
   width: 15rem;
   height: 20rem;
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+}
+
+.conteiner:hover .flip{
+  transform: rotateY(180deg);
+}
+
+.flip{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: 0.7s;
+}
+
+.frente, .tras{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  border-radius: 1.875rem;
-  transition: transform 0.3s ease-in-out;
+  backface-visibility: hidden;
 }
 
-.card:hover {
-  transform: scale(1.1);
+.frente{
+  background-image: url(Imagens/nutella.jpg);
+  background-size: cover;
 }
 
-.imagem {
-  display: flex;
-  justify-content: center;
+.tras{
+  background-color: #ffffff;
+  transform:rotateY(180deg);
 }
 
-.imagem img {
-  width: 70%;
-  height: auto;
-}
-
-.comprar button {
+.comprar{
+  color: #000;
   font-family: "Roboto Slab";
   display: flex;
   flex-direction: row;
@@ -149,9 +161,10 @@ input#barraPesquisa {
   transition: 1s;
 }
 
-.comprar button:hover {
+.comprar:hover {
   background: #006400;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .logoWhatsapp {
@@ -167,7 +180,7 @@ a {
 }
 
 @media (min-width:320px) and (max-width:700px) {
-  #header {
+  header {
     flex-direction: column;
     height: 250px;
     width: 100%;
@@ -182,7 +195,7 @@ a {
     width: 300px;
   }
 
-  #cards {
+  main {
     margin-top: 280px;
     grid-template-columns: 1fr;
     gap: 30px;
@@ -200,16 +213,12 @@ a {
 }
 
 @media (min-width:700px) and (max-width:900px) {
-  #cards {
+  main {
     grid-template-columns: repeat(3, 1fr);
     height: auto;
     gap: 30px;
     padding: 2px;
 
-  }
-
-  .card {
-    padding-bottom: 0px;
   }
 
   .containerPesquisa {
