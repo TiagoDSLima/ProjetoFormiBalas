@@ -126,6 +126,7 @@ main {
 }
 
 .frente, .tras{
+  background-color: #ffffff;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -134,13 +135,20 @@ main {
   backface-visibility: hidden;
 }
 
+.frente img{
+  width: 90%;
+  height: 90%;
+  border-radius: 20px;
+}
+
 .frente{
-  background-image: url(Imagens/nutella.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-size: cover;
 }
 
 .tras{
-  background-color: #ffffff;
   transform:rotateY(180deg);
 }
 
