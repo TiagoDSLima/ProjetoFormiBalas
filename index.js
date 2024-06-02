@@ -1,30 +1,15 @@
 function pesquisa() {
-    var busca;
-    var filtro;
-    var section; 
-    var cards;
-    var p;
-    var i, j;
-    busca = document.getElementById("barraPesquisa");
-    filtro = busca.value.toUpperCase();
-    section = document.getElementById("cards");
-    cards = section.getElementsByClassName("card");
-
-    for (j = 0; j < cards.length; j++) {
-        var card = cards[j];
-        var textoDiv = card.querySelector(".texto");
-        var p = textoDiv.querySelectorAll("p");
-        var encontrado = false;
-        for (i = 0; i < p.length; i++) {
-            if (p[i].innerHTML.toUpperCase().indexOf(filtro) > -1) {
-                encontrado = true;
-                break;
-            }
-        }
-        if (encontrado) {
-            card.style.display = ""; 
+    let input = document.getElementById('barraPesquisa').value.toLowerCase();
+    let containers = document.getElementsByClassName('conteiner');
+    
+    for (let i = 0; i < containers.length; i++) {
+        let container = containers[i];
+        let content = container.innerText.toLowerCase();
+        
+        if (content.includes(input)) {
+            container.style.display = '';
         } else {
-            card.style.display = "none"; 
+            container.style.display = 'none';
         }
     }
 }
