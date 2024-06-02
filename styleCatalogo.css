@@ -17,7 +17,7 @@
   padding: 0;
   box-sizing: border-box;
   background-color: #000;
-  height: 3000px;
+  height: 2300px;
   font-family: "Roboto Slab";
 }
 
@@ -96,6 +96,7 @@ input#barraPesquisa {
 
 main {
   animation: aparecerLentamente 3s ease forwards;
+  gap: 30px;
   margin-top: 10.25rem;
   position: absolute;
   z-index: 1;
