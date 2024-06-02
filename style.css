@@ -1,16 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-@keyframes subir {
-    from {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
 @keyframes aparecerLentamente {
     0% {
       opacity: 0;
@@ -47,7 +36,7 @@
 
 #Logo {
     height: 100%;
-    animation: subir 1s ease forwards;
+    animation: aparecerLentamente 3s ease forwards;
 }
 
 .buttons { 
