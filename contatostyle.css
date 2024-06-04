@@ -4,6 +4,13 @@
     border:0;
     box-sizing: border-box;
     font-family: "Roboto Slab";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+:root{
+    font-size: 62.5%;
+    --color-text:#ffffff;
+    --corzap:#006400;
 }
 #particles-js{
     background-color: #000;
@@ -13,14 +20,14 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 2200px;
+    height: 220rem;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
 .principal{
     animation: aparecerLentamente 3s ease forwards;
-    width: 180px;
+    width: 18rem;
     height: 100%;
     transition: 1s;
 }
@@ -31,30 +38,32 @@
 
 main{
     position: absolute;
-    height: 2200px;
+    height: 220rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 200px;
+    padding-bottom: 20rem;
 }
 section {
     display: flex;
-    width: 1200px;
+    width: 120rem;
 }
 h1{
-    color: #ffffff;
+    color: var(--color-text);
     text-align: center;
-    font-size: 40px;
-    margin: 25px;
+    font-size: 4rem;
+    margin: 2.5rem;
     animation: aparecerLentamente 6s;
 }
 main > h1:nth-of-type(2){
-    margin: 50px 0 25px 0;
+    margin: 5rem 0 2.5rem 0;
 }
 h2{
-    color:#ffffff;
+    color:var(--color-text);
+    font-size: 25px;
+    font-family: "Roboto Slab";
     margin-top: 10px;
-    margin-bottom: 45px;
+    margin-bottom: 4.5rem;
 }
 section p{
     color: #ffffff;
@@ -66,30 +75,31 @@ section p{
 .card{
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     background-color: transparent;
-    width: 300px;
-    height: 826px;
+    width: 30rem;
+    height: 82.6rem;
     border-radius: 10px;
-    padding: 20px;
+    padding: 2rem;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     animation: subir 1.25s;
 }
-.adm{
-    margin:auto;
-}
 .card img{
     top:0;
-    width: 200px;
-    height: 200px;
+    width: 20rem;
+    height: 20rem;
     border-radius: 50%;
-    border:6px solid white;
+    border:4px solid var(--color-text);
     animation: aparecerLentamente 6s;
+    object-fit: cover;
 }
 a{
     cursor: pointer;
     text-decoration: none;
+}
+.card a{
+    margin: auto;
 }
 button{
     font-family: "Roboto Slab";
@@ -99,8 +109,8 @@ button{
     gap: 8px;
     border-radius: 0.625rem; 
     border-color: transparent;
-    width: 165px;
-    height: 45px;
+    width: 16.5rem;
+    height: 4.5rem;
     color: black;
     font-size: 23px;
     transition: 1s;
@@ -111,19 +121,19 @@ button{
 button:hover{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-color: transparent;
-    background: #006400;
-    color: #ffffff;
-    border:1px solid #006400;
+    background: var(--corzap);
+    color: var(--color-text);
+    border:1px solid var(--corzap);
 }
 a ion-icon{
     width:30px;
     height: 200px;
 }
-aside{
+footer{
     animation: subir 1.25s;
-    margin-top: 80px;
+    margin-top: 8rem;
     width: 100%;
-    border-top: 2px solid white;
+    border-top: 2px solid var(--color-text);
     display: flex;
     padding: 10px;
     justify-content: space-evenly;
@@ -148,7 +158,7 @@ aside{
     width: 30px;
     height: 30px;
     color:white;
-    border-radius: 40%;
+    border-radius: 45%;
 }
 .conjunto .insta:hover{
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -170,40 +180,41 @@ aside{
 
 @media (min-width:300px) and (max-width:1020px){
     #particles-js{
-        height: 4800px;
+        height: 480rem;
     }
     main{
-        height: 4800px;
+        height: 480rem;
     }
     section{
         display: flex;
-        gap:18px;
+        gap:30px;
         flex-direction: column;
     }
     h1{
         font-size: 25px;
     }
 
-    aside{
+    footer{
         flex-direction: column;
-        width: auto;
+        width: 320px;
+        padding: 10px;
     }
 }
 
 @media (min-width:1020px) and (max-width:1440px){
     #particles-js{
-        height: 2200px;
+        height: 220rem;
     }
     main{
-        height: 2200px;
+        height: 220rem;
     }
     section{
-        width: 1000px;
+        width: 100rem;
         justify-content: space-around;
         display: flex;
         flex-direction: row;
     }
-    aside{
+    footer{
         width: 100%;
     }
 
