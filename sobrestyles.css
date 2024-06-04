@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     background-color: #000;
-    height: 100%;
+    height: 1900px;
 }
 
 main{
@@ -38,24 +38,26 @@ h1{
 
 section {
     animation: aparecerLentamente 3s ease forwards;
-    display: flex;
     width: 1200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-section p{
+section p, ul li{
     animation: aparecerLentamente 3s ease forwards;
     color:white;
     text-align: justify;
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 28px;
 }
 
 .card{
     animation: aparecerLentamente 3s ease forwards;
     border:5px solid rgb(193, 193, 223);
-    width: 600px;
-    height: 480px;
+    width: 900px;
+    height: auto;
     border-radius: 10px;
     background-color: transparent;
     padding: 20px;
@@ -64,5 +66,39 @@ section p{
     flex-direction: column;
     align-items: center;
     animation: subir 1.25s;
+}
+.pai{
+    margin-top: 20px;
+    animation: aparecerLentamente 3s ease forwards;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: auto;
+}
+.pai h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right:3px solid rgb(193, 193, 223);;
+    height: 200px;
+    padding: 20px;
+}
+.visao h1{
+    padding: 35px;
+}
+.missao, .visao, .valores{
+    border:5px solid rgb(193, 193, 223);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap:10px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+.valores h1{
+    height: 300px;
 }
 
